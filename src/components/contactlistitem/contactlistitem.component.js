@@ -1,19 +1,18 @@
-export default  {
+export default {
   name: 'contactlistitem',
   props: [],
-  mounted() {
-    
+  mounted () {
+
   },
-  data() {
+  data () {
     return {
-      
+
     }
   },
   methods: {
-   
+
   },
   computed: {
 
   }
 }
-
