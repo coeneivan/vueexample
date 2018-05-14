@@ -1,19 +1,18 @@
-export default  {
+export default {
   name: 'contacts',
   props: [],
-  mounted() {
-    
+  mounted () {
+
   },
-  data() {
+  data () {
     return {
-      
+
     }
   },
   methods: {
-   
+
   },
   computed: {
 
   }
 }
-

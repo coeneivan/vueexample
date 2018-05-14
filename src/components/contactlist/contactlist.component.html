@@ -1,5 +1,7 @@
-
 <section class="contactlist">
-  {{name}}
+  <ul>
+    <li v-for="(contact, key) in contacts" :key="key">
+      <contact-list-item :name="contact.name" :id="contact.id"></contact-list-item>
+    </li>
+  </ul>
 </section>
-

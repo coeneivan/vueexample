@@ -1,17 +1,11 @@
+import { mapGetters, mapActions } from "vuex";
+import types from "../../store/types";
+
 export default {
   name: 'contactlist',
-  props: {
-    name: {
-      type: String,
-      default: 'No name'
-    },
-    id: {
-      type: Number,
-      default: 0
-    }
-  },
+  props: [],
   mounted () {
-
+    this.getUsers()
   },
   data () {
     return {
@@ -19,9 +13,19 @@ export default {
     }
   },
   methods: {
-
+    ...mapActions({
+      getUsers: types.contactModule.actions.GetUsersFromApi
+    })
   },
   computed: {
-
+    singleContactLink: () => {
+      return {
+        name: 'singleContact',
+        params: {id: this.id}
+      }
+    },
+    ...mapGetters({
+      contacts: types.contactModule.getters.GetUsers
+    })
   }
 }

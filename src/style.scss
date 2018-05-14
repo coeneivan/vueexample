@@ -1,12 +1,22 @@
 $accent: #12AA3F;
-$toolbarheight: 1,5em;
-.root{
-    padding-top: $toolbarheight;
-    .toolbar{
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: $toolbarheight;
-        background-color: $accent;
+$toolbarheight: 1.5em;
+.root {
+  padding-top: $toolbarheight*2;
+  font-family: sans-serif;
+  .toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $toolbarheight;
+    background-color: $accent;
+    text-align: center;
+    font-size: $toolbarheight;
+    padding-top: 10px;
+    a {
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
     }
+  }
 }

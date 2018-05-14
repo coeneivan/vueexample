@@ -1,9 +1,5 @@
 
 <section class="contactlistitem">
-  <ul>
-    <li v-for="(contact, key) in contacts" :key="key">
-      <contact-list-item :name="contact.name" :id="contact.id"></contact-list-item>
-    </li>
-  </ul>
+  <router-link :to="{ name: 'singleContact', params: { id: id } }">{{name}}</router-link>
 </section>
 

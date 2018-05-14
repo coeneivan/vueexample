@@ -1,7 +1,7 @@
 <template>
   <div class="root">
     <div class="toolbar">
-      <h1>Contacts</h1>
+      <router-link :to="{name: 'home'}">Contacts</router-link>
     </div>
     <router-view></router-view>
   </div>
@@ -12,5 +12,6 @@ export default {
   name: 'app'
 }
 </script>
-
-<style src="./style.scss"></style>
+<style lang="scss">
+  @import './style.scss';
+</style>

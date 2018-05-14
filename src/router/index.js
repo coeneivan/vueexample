@@ -17,7 +17,7 @@ export default new Router({
     component: Home
   }, {
     path: '/contacts',
-    name: 'cotnacts',
+    name: 'contacts',
     component: Contacts
   }, {
     path: '/contacts/:id',
