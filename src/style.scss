@@ -1,0 +1,12 @@
+$accent: #12AA3F;
+$toolbarheight: 1,5em;
+.root{
+    padding-top: $toolbarheight;
+    .toolbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: $toolbarheight;
+        background-color: $accent;
+    }
+}

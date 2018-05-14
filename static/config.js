@@ -1,4 +1,4 @@
 export default {
-    API: 'https://jsonplaceholder.typicode.com/users/'
-  }
+    API: 'https://jsonplaceholder.typicode.com'
+}
   

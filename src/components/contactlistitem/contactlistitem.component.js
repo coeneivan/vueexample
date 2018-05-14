@@ -1,3 +1,5 @@
+import { mapGetters } from 'vuex'
+import types from '../../store/types'
 export default {
   name: 'contactlistitem',
   props: [],
@@ -13,6 +15,8 @@ export default {
 
   },
   computed: {
-
+    ...mapGetters({
+      contacts: types.contactModule.getters.GetUsers
+    })
   }
 }

@@ -1,6 +1,15 @@
 export default {
   name: 'contactlist',
-  props: [],
+  props: {
+    name: {
+      type: String,
+      default: 'No name'
+    },
+    id: {
+      type: Number,
+      default: 0
+    }
+  },
   mounted () {
 
   },

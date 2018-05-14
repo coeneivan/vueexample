@@ -1,7 +1,7 @@
 import types from './types'
 import userService from './services/userservice'
 
-const actions = {
+const state = {
   users: []
 }
 
