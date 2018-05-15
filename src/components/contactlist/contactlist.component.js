@@ -9,13 +9,16 @@ export default {
   },
   data () {
     return {
-
+      specialNumber: 2
     }
   },
   methods: {
     ...mapActions({
       getUsers: types.contactModule.actions.GetUsersFromApi
-    })
+    }),
+    isSpecial (id) {
+      
+    }
   },
   computed: {
     singleContactLink: () => {

@@ -1,6 +1,6 @@
 <section class="contactlist">
   <ul>
-    <li v-for="(contact, key) in contacts" :key="key">
+    <li v-for="(contact, key) in contacts" :key="key" :class='contact.id === specialNumber? "special" : "normal" '>
       <contact-list-item :name="contact.name" :id="contact.id"></contact-list-item>
     </li>
   </ul>
